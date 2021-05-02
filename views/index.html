@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Formulario Con express</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie-edge">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+
+    </head>
+
+    <body>
+        <h2 class="text-center mt-5"> Registro de usuarios</h2>
+        
+        <div class=" row  my-5 py-5  align-items-center justify-content-center"> 
+            <!-- LOs datos inngresados en el formulario son enviados a enviarRegistros.js -->
+            <FORM action="guardarRegistros"  method="POST">
+                <h4 class="text-center mt-5"> LLenar formulario</h4>
+                <div class="form-group">
+                    Nombre: <br><input type="text" name="nameInput" required>
+                </div>
+
+                 <div class="form-group">
+                    Corrreo : <br> <input type="text" name="emailInput" required>
+                </div>
+
+
+                <div class="form-group ">
+                    <button class=" btn btn-success" type="submit" name="save"> Guardar</button>
+                    <a href="/listado">
+                         <button class=" btn btn-primary"  type="button" name="show"> Mostar</button>
+                    </a>   
+                </div>
+
+                
+            </FORM>
+
+            
+        </div>
+    
+
+ 
+
+ 
+       
+
+    
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>

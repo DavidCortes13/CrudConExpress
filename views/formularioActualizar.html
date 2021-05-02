@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actualizar formulario</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid mt-auto">
+        <div class="container my-5 w-50">
+
+            {{#each registros}}
+            <form action="/confimarActualizacion" method="POST">
+                Ingresar nuevo nombre:
+                <input type="text" name="nombreUpd" size="30" value={{nombre}}>
+                <br><br>
+                Ingrese un nuevo correo:
+                <input type="text" name="correoUpd" size="30" value={{correo}}>
+                <input type="hidden" name="codigo" size="10" value={{id}}>
+
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary mt-3" value="Modificar">Actualizar</button>
+                </div>
+
+            </form>
+            {{/each}}
+        </div>
+    </div>
+    
+    
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
